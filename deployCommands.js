@@ -1,11 +1,11 @@
-//슬래시 커맨드 등록 스크립트
-//실행 명령어: node deployCommands.js
+// 슬래시 커맨드 등록 스크립트
+// 실행 명령어: node deployCommands.js
 import { REST, Routes, SlashCommandBuilder } from 'discord.js';
-import { config } from "dotenv";
+import { config } from 'dotenv';
 
 config();
 
-//등록할 슬래시 명령어의 구성 데이터 정의
+// 등록할 슬래시 명령어의 구성 데이터 정의
 const commands = [
     new SlashCommandBuilder()
         .setName('ping')

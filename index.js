@@ -1,8 +1,8 @@
-//메인 실행파일
-//테스트 명령어: node index.js
+// 메인 실행파일
+// 테스트 명령어: node index.js
 // 주요 클래스 가져오기
-import { Client, GatewayIntentBits } from "discord.js";
-import { config } from "dotenv";
+import { Client, GatewayIntentBits } from 'discord.js';
+import { config } from 'dotenv';
 
 config();
 
@@ -19,12 +19,12 @@ client.once('ready', () => {
 // 사용자가 메세지 입력 등으로 액션을 취했을 때 반응하는 리스너
 client.on('interactionCreate', async interaction => {
     // 유저가 슬래시 명령어를 입력한 것이 아니면 걍 넘어가
-    if(!interaction.isChatInputCommand()) return;
+    if (!interaction.isChatInputCommand()) return;
     
     const { commandName } = interaction;
 
     // 입력한 명령어가 'ping'이면
-    if( commandName === 'ping') {
+    if (commandName === 'ping') {
         //'pong!'이라고 대답해라 
         await interaction.reply('Pong!');
     }
