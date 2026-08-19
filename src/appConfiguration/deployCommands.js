@@ -1,8 +1,8 @@
 // 명령어를 디코서버로 배포하는 스크립트
 // 실행명령어: node deployCommands.js
 import { REST, Routes, SlashCommandBuilder } from 'discord.js';
-import { clientId, discordToken, guildId } from './settings.js';
-import { commands } from './src/appConfiguration/appConfiguration.js';
+import { clientId, discordToken, guildId } from '../../settings.js';
+import { commands } from './appConfiguration.js';
 
 // 디스코드 REST API 통신 모듈 초기화
 const rest = new REST({ version: '10' }).setToken(discordToken);
