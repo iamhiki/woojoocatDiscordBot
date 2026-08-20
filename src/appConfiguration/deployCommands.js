@@ -1,5 +1,5 @@
 // 명령어를 디코서버로 배포하는 스크립트
-// 실행명령어: node deployCommands.js
+// 실행명령어: node src/appConfiguration/deployCommands.js
 import { REST, Routes, SlashCommandBuilder } from 'discord.js';
 import { clientId, discordToken, guildId } from '../../settings.js';
 import { commands } from './appConfiguration.js';
