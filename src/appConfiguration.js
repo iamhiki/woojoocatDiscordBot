@@ -1,7 +1,7 @@
 // 명령어 등록
 // 테스트 명령어: node appConfiguration.js
 import { Client, GatewayIntentBits, SlashCommandBuilder } from 'discord.js';
-import {  readFileSync, writeFileSync } from 'fs';
+import { readFileSync, writeFileSync } from 'fs';
 import { randomUUID } from 'crypto';
 
 export const client = new Client({
